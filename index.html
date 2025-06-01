@@ -276,7 +276,7 @@
   </section>
 
   <!-- Publications -->
-  <section id="publications" class="py-20 px-4 sm:px-6 lg:px-8 bg-white/50">
+  <section id="publications" class="py-20 px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-bold text-slate-800 mb-6">Recent Publications</h2>
@@ -310,7 +310,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8">
+  <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8  bg-white/50">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-4xl md:text-5xl font-bold text-slate-800 mb-6">Get In Touch</h2>
       <p class="text-xl text-slate-600 mb-12 max-w-2xl mx-auto">
@@ -372,7 +372,6 @@
     mobileMenuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
-
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
@@ -388,7 +387,6 @@
         }
       });
     });
-
     // Add scroll effect to navigation
     window.addEventListener('scroll', () => {
       const nav = document.querySelector('nav');
@@ -400,7 +398,6 @@
         nav.classList.remove('bg-white/90');
       }
     });
-
     // Intersection Observer for animations
     const observerOptions = {
       threshold: 0.1,
@@ -413,7 +410,6 @@
         }
       });
     }, observerOptions);
-
     // Observe all sections
     document.querySelectorAll('section').forEach(section => {
       observer.observe(section);
